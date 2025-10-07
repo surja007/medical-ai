@@ -1,0 +1,46 @@
+{
+  "app/assistant/page.tsx -> @/lib/api": {
+    "id": "app/assistant/page.tsx -> @/lib/api",
+    "files": []
+  },
+  "app/dashboard/page.tsx -> @/lib/api": {
+    "id": "app/dashboard/page.tsx -> @/lib/api",
+    "files": []
+  },
+  "app/family/page.tsx -> @/lib/api": {
+    "id": "app/family/page.tsx -> @/lib/api",
+    "files": []
+  },
+  "app/images/page.tsx -> @/lib/api": {
+    "id": "app/images/page.tsx -> @/lib/api",
+    "files": []
+  },
+  "app/symptoms/page.tsx -> @/lib/api": {
+    "id": "app/symptoms/page.tsx -> @/lib/api",
+    "files": []
+  },
+  "app/wearables/page.tsx -> @/lib/api": {
+    "id": "app/wearables/page.tsx -> @/lib/api",
+    "files": []
+  },
+  "components/search/SearchAnalytics.tsx -> @/lib/api": {
+    "id": "components/search/SearchAnalytics.tsx -> @/lib/api",
+    "files": []
+  },
+  "components/search/SearchHistory.tsx -> @/lib/api": {
+    "id": "components/search/SearchHistory.tsx -> @/lib/api",
+    "files": []
+  },
+  "components/wearables/AlertsPanel.tsx -> @/lib/api": {
+    "id": "components/wearables/AlertsPanel.tsx -> @/lib/api",
+    "files": []
+  },
+  "components/wearables/FamilyMonitoring.tsx -> @/lib/api": {
+    "id": "components/wearables/FamilyMonitoring.tsx -> @/lib/api",
+    "files": []
+  },
+  "components/wearables/HealthMetrics.tsx -> @/lib/api": {
+    "id": "components/wearables/HealthMetrics.tsx -> @/lib/api",
+    "files": []
+  }
+}
