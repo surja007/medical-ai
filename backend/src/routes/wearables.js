@@ -4,19 +4,21 @@ const { auth } = require('../middleware/auth');
 const User = require('../models/User');
 const WearableData = require('../models/WearableData');
 const WearableService = require('../services/WearableService');
+const BluetoothWearableService = require('../services/BluetoothWearableService');
 const logger = require('../utils/logger');
 const axios = require('axios');
 
 const router = express.Router();
 
 // @route   POST /api/wearables/connect
-// @desc    Connect a wearable device
+// @desc    Connect a wearable device (API or Bluetooth)
 // @access  Private
 router.post('/connect', [
   auth,
-  body('deviceType').isIn(['fitbit', 'apple_watch', 'garmin', 'samsung_health', 'custom']),
+  body('deviceType').isIn(['fitbit', 'apple_watch', 'garmin', 'samsung_health', 'custom', 'bluetooth_generic', 'bluetooth_fitbit', 'bluetooth_garmin', 'bluetooth_polar']),
   body('accessToken').optional().trim(),
-  body('refreshToken').optional().trim()
+  body('refreshToken').optional().trim(),
+  body('connectionType').optional().isIn(['api', 'bluetooth']).withMessage('Connection type must be api or bluetooth')
 ], async (req, res) => {
   try {
     const errors = validationResult(req);
@@ -28,9 +30,31 @@ router.post('/connect', [
       });
     }
 
-    const { deviceType, accessToken, refreshToken, deviceId } = req.body;
+    const { deviceType, accessToken, refreshToken, deviceId, connectionType = 'api', bluetoothInfo } = req.body;
     const userId = req.user.id;
 
+    // Handle Bluetooth connections
+    if (connectionType === 'bluetooth') {
+      const result = await BluetoothWearableService.registerBluetoothDevice(userId, {
+        deviceType,
+        deviceId: deviceId || `bt_${Date.now()}`,
+        name: bluetoothInfo?.name || 'Bluetooth Device',
+        manufacturer: bluetoothInfo?.manufacturer,
+        bluetoothId: bluetoothInfo?.bluetoothId,
+        services: bluetoothInfo?.services,
+        characteristics: bluetoothInfo?.characteristics,
+        capabilities: bluetoothInfo?.capabilities
+      });
+
+      return res.json({
+        success: true,
+        message: 'Bluetooth device connected successfully',
+        device: result.device,
+        connectionType: 'bluetooth'
+      });
+    }
+
+    // Handle API connections (existing logic)
     const user = await User.findById(userId);
     
     // Check if device already connected
@@ -43,6 +67,7 @@ router.post('/connect', [
       existingDevice.accessToken = accessToken;
       existingDevice.refreshToken = refreshToken;
       existingDevice.isActive = true;
+      existingDevice.connectionType = 'api';
     } else {
       // Add new device
       user.wearableDevices.push({
@@ -50,18 +75,20 @@ router.post('/connect', [
         deviceId: deviceId || `${deviceType}_${Date.now()}`,
         accessToken,
         refreshToken,
-        isActive: true
+        isActive: true,
+        connectionType: 'api'
       });
     }
 
     await user.save();
 
-    logger.info(`Wearable device connected for user ${userId}: ${deviceType}`);
+    logger.info(`Wearable device connected for user ${userId}: ${deviceType} (${connectionType})`);
 
     res.json({
       success: true,
       message: 'Device connected successfully',
-      devices: user.wearableDevices
+      devices: user.wearableDevices,
+      connectionType: 'api'
     });
   } catch (error) {
     logger.error('Connect wearable error:', error);
@@ -93,13 +120,13 @@ router.get('/devices', auth, async (req, res) => {
 });
 
 // @route   POST /api/wearables/data
-// @desc    Submit wearable device data
+// @desc    Submit wearable device data (API or Bluetooth)
 // @access  Private
 router.post('/data', [
   auth,
   body('deviceId').notEmpty().withMessage('Device ID is required'),
-  body('deviceType').isIn(['fitbit', 'apple_watch', 'garmin', 'samsung_health', 'xiaomi', 'huawei', 'custom']),
-  body('dataType').isIn(['heart_rate', 'blood_pressure', 'steps', 'sleep', 'location', 'fall_detection', 'emergency_button', 'battery_level', 'temperature', 'oxygen_saturation']),
+  body('deviceType').isIn(['fitbit', 'apple_watch', 'garmin', 'samsung_health', 'xiaomi', 'huawei', 'custom', 'bluetooth_generic', 'bluetooth_fitbit', 'bluetooth_garmin', 'bluetooth_polar']),
+  body('dataType').isIn(['heart_rate', 'blood_pressure', 'steps', 'sleep', 'location', 'fall_detection', 'emergency_button', 'battery_level', 'temperature', 'oxygen_saturation', 'battery']),
   body('data').isObject().withMessage('Data object is required')
 ], async (req, res) => {
   try {
@@ -112,23 +139,39 @@ router.post('/data', [
       });
     }
 
-    const { deviceId, deviceType, dataType, data } = req.body;
+    const { deviceId, deviceType, dataType, data, connectionType } = req.body;
     const userId = req.user.id;
 
-    // Process the wearable data through the service
-    const wearableData = await WearableService.processWearableData(
-      userId,
-      deviceId,
-      deviceType,
-      dataType,
-      data
-    );
+    let result;
+
+    // Handle Bluetooth data
+    if (deviceType.startsWith('bluetooth_') || connectionType === 'bluetooth') {
+      result = await BluetoothWearableService.processBluetoothData(userId, deviceId, {
+        type: dataType,
+        ...data,
+        timestamp: data.timestamp || new Date().toISOString()
+      });
+    } else {
+      // Handle API data (existing logic)
+      const wearableData = await WearableService.processWearableData(
+        userId,
+        deviceId,
+        deviceType,
+        dataType,
+        data
+      );
+      
+      result = {
+        success: true,
+        dataId: wearableData._id,
+        alertsGenerated: wearableData.processing.alertsGenerated?.length || 0
+      };
+    }
 
     res.json({
       success: true,
       message: 'Wearable data processed successfully',
-      dataId: wearableData._id,
-      alertsGenerated: wearableData.processing.alertsGenerated?.length || 0
+      ...result
     });
   } catch (error) {
     logger.error('Submit wearable data error:', error);
@@ -181,6 +224,9 @@ router.get('/health-data', auth, async (req, res) => {
     // Get connected devices
     const user = await User.findById(userId);
     const connectedDevices = user.wearableDevices?.filter(d => d.isActive) || [];
+    
+    // Get active Bluetooth connections
+    const bluetoothConnections = BluetoothWearableService.getUserConnections(userId);
 
     res.json({
       success: true,
@@ -188,6 +234,7 @@ router.get('/health-data', auth, async (req, res) => {
       latestReadings,
       connectedDevices: connectedDevices.length,
       devices: connectedDevices,
+      bluetoothConnections,
       totalRecords: wearableData.length
     });
   } catch (error) {
@@ -342,5 +389,92 @@ function generateMockBPData(startDate, endDate) {
   
   return data;
 }
+
+// @route   POST /api/wearables/bluetooth/register
+// @desc    Register a Bluetooth device connection
+// @access  Private
+router.post('/bluetooth/register', [
+  auth,
+  body('deviceId').notEmpty().withMessage('Device ID is required'),
+  body('name').optional().trim(),
+  body('manufacturer').optional().trim(),
+  body('services').optional().isArray(),
+  body('characteristics').optional().isArray()
+], async (req, res) => {
+  try {
+    const errors = validationResult(req);
+    if (!errors.isEmpty()) {
+      return res.status(400).json({
+        success: false,
+        message: 'Validation errors',
+        errors: errors.array()
+      });
+    }
+
+    const userId = req.user.id;
+    const deviceInfo = req.body;
+
+    const result = await BluetoothWearableService.registerBluetoothDevice(userId, deviceInfo);
+
+    res.json({
+      success: true,
+      message: 'Bluetooth device registered successfully',
+      device: result.device
+    });
+
+  } catch (error) {
+    logger.error('Register Bluetooth device error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Error registering Bluetooth device'
+    });
+  }
+});
+
+// @route   DELETE /api/wearables/bluetooth/:deviceId
+// @desc    Disconnect a Bluetooth device
+// @access  Private
+router.delete('/bluetooth/:deviceId', auth, async (req, res) => {
+  try {
+    const { deviceId } = req.params;
+    
+    await BluetoothWearableService.handleDeviceDisconnection(deviceId);
+
+    res.json({
+      success: true,
+      message: 'Bluetooth device disconnected successfully'
+    });
+
+  } catch (error) {
+    logger.error('Disconnect Bluetooth device error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Error disconnecting Bluetooth device'
+    });
+  }
+});
+
+// @route   GET /api/wearables/bluetooth/connections
+// @desc    Get active Bluetooth connections for user
+// @access  Private
+router.get('/bluetooth/connections', auth, async (req, res) => {
+  try {
+    const userId = req.user.id;
+    const connections = BluetoothWearableService.getUserConnections(userId);
+
+    res.json({
+      success: true,
+      connections,
+      count: connections.length
+    });
+
+  } catch (error) {
+    logger.error('Get Bluetooth connections error:', error);
+    res.status(500).json({
+      success: false,
+      message: 'Error retrieving Bluetooth connections'
+    });
+  }
+});
 
 module.exports = router;

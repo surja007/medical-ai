@@ -1,0 +1,63 @@
+services:
+  # Backend API Service
+  - type: web
+    name: smart-health-backend
+    env: node
+    buildCommand: cd backend && npm install
+    startCommand: cd backend && npm start
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: PORT
+        value: 10000
+      - key: MONGODB_URI
+        fromDatabase:
+          name: mongodb
+          property: connectionString
+      - key: JWT_SECRET
+        generateValue: true
+      - key: JWT_EXPIRE
+        value: 7d
+      - key: GEMINI_API_KEY
+        sync: false  # Set manually in dashboard
+      - key: ENCRYPTION_KEY
+        generateValue: true
+      - key: FRONTEND_URL
+        fromService:
+          type: web
+          name: smart-health-frontend
+          property: host
+      - key: RATE_LIMIT_WINDOW
+        value: 15
+      - key: RATE_LIMIT_MAX
+        value: 100
+
+  # Frontend Application
+  - type: web
+    name: smart-health-frontend
+    env: node
+    buildCommand: cd frontend && npm install && npm run build
+    startCommand: cd frontend && npm start
+    envVars:
+      - key: NEXT_PUBLIC_API_URL
+        fromService:
+          type: web
+          name: smart-health-backend
+          property: host
+      - key: NEXT_PUBLIC_SOCKET_URL
+        fromService:
+          type: web
+          name: smart-health-backend
+          property: host
+      - key: NEXT_PUBLIC_APP_NAME
+        value: HealthAI
+      - key: NEXT_PUBLIC_ENABLE_WEARABLES
+        value: true
+      - key: NEXT_PUBLIC_ENABLE_VIDEO_CALLS
+        value: true
+
+databases:
+  # Note: Render doesn't provide MongoDB, use external service
+  - name: mongodb
+    databaseName: smart_health_platform
+    user: admin

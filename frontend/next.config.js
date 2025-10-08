@@ -4,8 +4,7 @@ const nextConfig = {
     appDir: true,
   },
   images: {
-    domains: ['localhost', 'smart-health-platform.onrender.com'],
-    formats: ['image/webp', 'image/avif'],
+    unoptimized: true,
   },
   env: {
     NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000',
@@ -18,6 +17,11 @@ const nextConfig = {
     };
     return config;
   },
+  // Enable static export for Render static hosting
+  output: 'export',
+  trailingSlash: true,
+  // Configure for production deployment
+  poweredByHeader: false,
 }
 
 module.exports = nextConfig

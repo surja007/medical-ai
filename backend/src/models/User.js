@@ -73,7 +73,7 @@ const userSchema = new mongoose.Schema({
   wearableDevices: [{
     deviceType: {
       type: String,
-      enum: ['fitbit', 'apple_watch', 'garmin', 'samsung_health', 'xiaomi', 'huawei', 'custom']
+      enum: ['fitbit', 'apple_watch', 'garmin', 'samsung_health', 'xiaomi', 'huawei', 'custom', 'bluetooth_generic', 'bluetooth_fitness', 'bluetooth_heart_rate', 'bluetooth_fitbit', 'bluetooth_garmin', 'bluetooth_polar']
     },
     deviceId: String,
     deviceName: String,

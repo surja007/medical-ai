@@ -786,3 +786,359 @@
 {"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T17:36:16.980Z"}
 {"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T17:36:16.994Z"}
 {"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T17:36:16.996Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"smart-health-backend","timestamp":"2025-10-07T19:09:55.737Z"}
+{"level":"info","message":"Session cleanup jobs scheduled","service":"smart-health-backend","timestamp":"2025-10-07T19:09:55.741Z"}
+{"level":"info","message":"Running one-time session cleanup...","service":"smart-health-backend","timestamp":"2025-10-07T19:09:55.741Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"smart-health-backend","timestamp":"2025-10-07T19:09:55.756Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","service":"smart-health-backend","timestamp":"2025-10-07T19:09:55.771Z"}
+{"level":"info","message":"One-time cleanup completed. Removed 0 expired sessions.","service":"smart-health-backend","timestamp":"2025-10-07T19:09:55.772Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:10:22.756Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:10:22.763Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T19:10:22.786Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T19:10:22.789Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:10:22.799Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:10:22.825Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:11:11.390Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:11:11.403Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:11:11.429Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:11:11.433Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:11:11.449Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:11:11.451Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:21:41.733Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:21:41.744Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:21:41.760Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:21:41.762Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:21:41.774Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:21:41.775Z"}
+{"level":"info","message":"Starting session cleanup job...","service":"smart-health-backend","timestamp":"2025-10-07T19:30:00.207Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","service":"smart-health-backend","timestamp":"2025-10-07T19:30:00.210Z"}
+{"level":"info","message":"Session cleanup completed. Removed 0 expired sessions.","service":"smart-health-backend","timestamp":"2025-10-07T19:30:00.210Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:38:05.852Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:38:05.854Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T19:38:05.859Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T19:38:05.860Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:38:05.875Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:38:05.886Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:42:12.788Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:42:12.799Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.428Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.432Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.440Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.443Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.447Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.448Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.458Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.471Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.502Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.505Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.517Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T19:58:59.521Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.587Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.590Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.597Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.599Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.604Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.605Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.612Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.620Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.639Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.641Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.652Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:03.654Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:37.053Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:37.062Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:37.084Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:37.086Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:37.097Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:37.099Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:43.577Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:43.590Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:45.157Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:45.163Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:45.179Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:45.182Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:45.191Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:28:45.194Z"}
+{"level":"info","message":"Starting session cleanup job...","service":"smart-health-backend","timestamp":"2025-10-07T20:30:00.530Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","service":"smart-health-backend","timestamp":"2025-10-07T20:30:00.533Z"}
+{"level":"info","message":"Session cleanup completed. Removed 0 expired sessions.","service":"smart-health-backend","timestamp":"2025-10-07T20:30:00.533Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:14.017Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:14.027Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:14.043Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:14.045Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:14.056Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:14.058Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:20.528Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:20.534Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:20.553Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:20.555Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:20.565Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:30:20.566Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:32:49.521Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:32:49.530Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:32:49.546Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:32:49.548Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:32:49.557Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:32:49.562Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:34:15.459Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:34:15.469Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:34:15.475Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:34:15.494Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:34:15.500Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:34:15.514Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:34:15.515Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:34:15.533Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:35:28.190Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:35:28.199Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:35:28.215Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:35:28.217Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:35:28.228Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:35:28.230Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:36:25.317Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:36:25.324Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:36:25.340Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:36:25.343Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:36:25.354Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T20:36:25.356Z"}
+{"level":"info","message":"Starting session cleanup job...","service":"smart-health-backend","timestamp":"2025-10-07T21:30:00.880Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","service":"smart-health-backend","timestamp":"2025-10-07T21:30:00.882Z"}
+{"level":"info","message":"Session cleanup completed. Removed 0 expired sessions.","service":"smart-health-backend","timestamp":"2025-10-07T21:30:00.882Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:48.321Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:48.324Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T21:39:48.336Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-07T21:39:48.337Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:48.347Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:48.358Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:51.266Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:51.277Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:51.305Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:51.307Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:51.323Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:51.326Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:54.238Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:54.247Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:54.255Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:54.268Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:54.276Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:54.290Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:54.291Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:39:54.312Z"}
+{"level":"info","message":"POST /api/wearables/connect - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:40:02.717Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.806Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.808Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.819Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.821Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.827Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.841Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.847Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.860Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.862Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-07T21:46:21.906Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"smart-health-backend","timestamp":"2025-10-08T01:12:43.977Z"}
+{"level":"info","message":"Session cleanup jobs scheduled","service":"smart-health-backend","timestamp":"2025-10-08T01:12:43.981Z"}
+{"level":"info","message":"Running one-time session cleanup...","service":"smart-health-backend","timestamp":"2025-10-08T01:12:43.982Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"smart-health-backend","timestamp":"2025-10-08T01:12:43.996Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","service":"smart-health-backend","timestamp":"2025-10-08T01:12:44.012Z"}
+{"level":"info","message":"One-time cleanup completed. Removed 0 expired sessions.","service":"smart-health-backend","timestamp":"2025-10-08T01:12:44.012Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:47.614Z"}
+{"level":"info","message":"POST /api/auth/refresh - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:47.621Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-08T01:13:47.638Z"}
+{"level":"info","message":"Access token refreshed for session: 270c483513f2c7a2dd4e810258356253fa408c80b69e8bc6883afb677da8a7a9","service":"smart-health-backend","timestamp":"2025-10-08T01:13:47.640Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:47.648Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:47.665Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:49.341Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:49.353Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:49.380Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:49.383Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:49.398Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:49.403Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:55.909Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:55.917Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:55.923Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:55.938Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:55.944Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:55.959Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:55.960Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:13:55.978Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:14:43.742Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:14:43.753Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:14:47.337Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:14:47.347Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:14:49.606Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:14:49.617Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:02.388Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:02.395Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:02.412Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:02.414Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:02.427Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:02.430Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:22.853Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:22.860Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:22.868Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:22.881Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:22.887Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:22.901Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:22.902Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:22.915Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:24.765Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:24.776Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:29.379Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:29.998Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:31.561Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:34.112Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:34.119Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:34.142Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:34.144Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:34.154Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:34.155Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:53.833Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:53.840Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:53.860Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:53.862Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:53.876Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:15:53.879Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:21.013Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:21.020Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:21.042Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:21.044Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:21.057Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:21.061Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:26.830Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:26.839Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:35.261Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:35.269Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:35.286Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:35.289Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:35.306Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:35.308Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:38.924Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:38.931Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:38.940Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:38.942Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:38.952Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:38.954Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:55.303Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:55.319Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:55.343Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:55.346Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:55.360Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:55.362Z"}
+{"level":"info","message":"GET /api/communication/doctors - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:16:59.420Z"}
+{"level":"info","message":"Searching for healthcare facilities near 22.8052116, 86.2741972 within 10km","service":"smart-health-backend","timestamp":"2025-10-08T01:16:59.426Z"}
+{"level":"info","message":"Searching Overpass API for healthcare facilities around 22.8052116, 86.2741972 within 10km","service":"smart-health-backend","timestamp":"2025-10-08T01:16:59.426Z"}
+{"level":"info","message":"Found 29 healthcare facilities from Overpass API","service":"smart-health-backend","timestamp":"2025-10-08T01:17:02.108Z"}
+{"level":"info","message":"Found 39 healthcare facilities from Nominatim API","service":"smart-health-backend","timestamp":"2025-10-08T01:17:10.717Z"}
+{"level":"info","message":"Search method 1 returned 29 results","service":"smart-health-backend","timestamp":"2025-10-08T01:17:10.718Z"}
+{"level":"info","message":"Search method 2 returned 39 results","service":"smart-health-backend","timestamp":"2025-10-08T01:17:10.718Z"}
+{"level":"info","message":"Search method 3 returned 8 results","service":"smart-health-backend","timestamp":"2025-10-08T01:17:10.718Z"}
+{"level":"info","message":"Returning 20 healthcare facilities","service":"smart-health-backend","timestamp":"2025-10-08T01:17:10.719Z"}
+{"level":"info","message":"Doctor search saved for user 68e4e68769f18e1681ed9d9e","service":"smart-health-backend","timestamp":"2025-10-08T01:17:10.723Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:13.967Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:13.974Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:13.990Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:13.991Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:14.004Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:14.007Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:16.711Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:16.719Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:16.730Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:16.751Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:16.757Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:16.779Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:16.781Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:16.800Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:20.133Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:20.143Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:23.872Z"}
+{"level":"info","message":"GET /api/wearables/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:17:23.880Z"}
+{"level":"info","message":"HEAD /health - ::ffff:127.0.0.1","service":"smart-health-backend","timestamp":"2025-10-08T01:19:38.143Z"}
+{"level":"info","message":"POST /api/auth/register - ::ffff:127.0.0.1","service":"smart-health-backend","timestamp":"2025-10-08T01:19:47.582Z"}
+{"level":"info","message":"POST /api/auth/register - ::ffff:127.0.0.1","service":"smart-health-backend","timestamp":"2025-10-08T01:20:30.538Z"}
+{"level":"info","message":"POST /api/auth/register - ::ffff:127.0.0.1","service":"smart-health-backend","timestamp":"2025-10-08T01:21:13.989Z"}
+{"level":"info","message":"POST /api/auth/register - ::ffff:127.0.0.1","service":"smart-health-backend","timestamp":"2025-10-08T01:24:35.899Z"}
+{"level":"info","message":"Session created for user 68e5bd53d85a977783a69d22: 771e5c8cf68b57f78d5c5b114d215a1c1b6c3651f234c67a87ca98707eeacfd8","service":"smart-health-backend","timestamp":"2025-10-08T01:24:36.184Z"}
+{"level":"info","message":"New user registered: test2@example.com","service":"smart-health-backend","timestamp":"2025-10-08T01:24:36.184Z"}
+{"level":"info","message":"POST /api/auth/login - ::ffff:127.0.0.1","service":"smart-health-backend","timestamp":"2025-10-08T01:24:48.611Z"}
+{"level":"info","message":"Session created for user 68e5bd53d85a977783a69d22: 6204b55f4b998c7267737d947833124cc8c502cdb93cdd6344e77656ccfc8330","service":"smart-health-backend","timestamp":"2025-10-08T01:24:49.104Z"}
+{"level":"info","message":"User logged in: test2@example.com","service":"smart-health-backend","timestamp":"2025-10-08T01:24:49.104Z"}
+{"level":"info","message":"POST /api/wearables/bluetooth/register - ::ffff:127.0.0.1","service":"smart-health-backend","timestamp":"2025-10-08T01:25:04.059Z"}
+{"_message":"User validation failed","errors":{"wearableDevices.0.deviceType":{"kind":"enum","message":"`bluetooth_generic` is not a valid enum value for path `deviceType`.","name":"ValidatorError","path":"deviceType","properties":{"enumValues":["fitbit","apple_watch","garmin","samsung_health","xiaomi","huawei","custom"],"length":17,"message":"`bluetooth_generic` is not a valid enum value for path `deviceType`.","path":"deviceType","type":"enum","value":"bluetooth_generic"},"value":"bluetooth_generic"}},"level":"error","message":"Error registering Bluetooth device: User validation failed: wearableDevices.0.deviceType: `bluetooth_generic` is not a valid enum value for path `deviceType`.","service":"smart-health-backend","stack":"ValidationError: User validation failed: wearableDevices.0.deviceType: `bluetooth_generic` is not a valid enum value for path `deviceType`.\n    at Document.invalidate (/home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/document.js:3362:32)\n    at Subdocument.invalidate (/home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/types/subdocument.js:229:12)\n    at /home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/document.js:3123:17\n    at /home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)","timestamp":"2025-10-08T01:25:04.075Z"}
+{"_message":"User validation failed","errors":{"wearableDevices.0.deviceType":{"kind":"enum","message":"`bluetooth_generic` is not a valid enum value for path `deviceType`.","name":"ValidatorError","path":"deviceType","properties":{"enumValues":["fitbit","apple_watch","garmin","samsung_health","xiaomi","huawei","custom"],"length":17,"message":"`bluetooth_generic` is not a valid enum value for path `deviceType`.","path":"deviceType","type":"enum","value":"bluetooth_generic"},"value":"bluetooth_generic"}},"level":"error","message":"Register Bluetooth device error: User validation failed: wearableDevices.0.deviceType: `bluetooth_generic` is not a valid enum value for path `deviceType`.","service":"smart-health-backend","stack":"ValidationError: User validation failed: wearableDevices.0.deviceType: `bluetooth_generic` is not a valid enum value for path `deviceType`.\n    at Document.invalidate (/home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/document.js:3362:32)\n    at Subdocument.invalidate (/home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/types/subdocument.js:229:12)\n    at /home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/document.js:3123:17\n    at /home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)","timestamp":"2025-10-08T01:25:04.076Z"}
+{"level":"info","message":"POST /api/wearables/bluetooth/register - ::ffff:127.0.0.1","service":"smart-health-backend","timestamp":"2025-10-08T01:26:00.886Z"}
+{"_message":"User validation failed","errors":{"wearableDevices.0.deviceType":{"kind":"enum","message":"`bluetooth_generic` is not a valid enum value for path `deviceType`.","name":"ValidatorError","path":"deviceType","properties":{"enumValues":["fitbit","apple_watch","garmin","samsung_health","xiaomi","huawei","custom"],"length":17,"message":"`bluetooth_generic` is not a valid enum value for path `deviceType`.","path":"deviceType","type":"enum","value":"bluetooth_generic"},"value":"bluetooth_generic"}},"level":"error","message":"Error registering Bluetooth device: User validation failed: wearableDevices.0.deviceType: `bluetooth_generic` is not a valid enum value for path `deviceType`.","service":"smart-health-backend","stack":"ValidationError: User validation failed: wearableDevices.0.deviceType: `bluetooth_generic` is not a valid enum value for path `deviceType`.\n    at Document.invalidate (/home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/document.js:3362:32)\n    at Subdocument.invalidate (/home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/types/subdocument.js:229:12)\n    at /home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/document.js:3123:17\n    at /home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)","timestamp":"2025-10-08T01:26:00.895Z"}
+{"_message":"User validation failed","errors":{"wearableDevices.0.deviceType":{"kind":"enum","message":"`bluetooth_generic` is not a valid enum value for path `deviceType`.","name":"ValidatorError","path":"deviceType","properties":{"enumValues":["fitbit","apple_watch","garmin","samsung_health","xiaomi","huawei","custom"],"length":17,"message":"`bluetooth_generic` is not a valid enum value for path `deviceType`.","path":"deviceType","type":"enum","value":"bluetooth_generic"},"value":"bluetooth_generic"}},"level":"error","message":"Register Bluetooth device error: User validation failed: wearableDevices.0.deviceType: `bluetooth_generic` is not a valid enum value for path `deviceType`.","service":"smart-health-backend","stack":"ValidationError: User validation failed: wearableDevices.0.deviceType: `bluetooth_generic` is not a valid enum value for path `deviceType`.\n    at Document.invalidate (/home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/document.js:3362:32)\n    at Subdocument.invalidate (/home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/types/subdocument.js:229:12)\n    at /home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/document.js:3123:17\n    at /home/ghost/Desktop/medical-ai-main/node_modules/mongoose/lib/schemaType.js:1417:9\n    at process.processTicksAndRejections (node:internal/process/task_queues:85:11)","timestamp":"2025-10-08T01:26:00.896Z"}
+{"level":"info","message":"Server running on port 5000 in development mode","service":"smart-health-backend","timestamp":"2025-10-08T01:28:53.705Z"}
+{"level":"info","message":"Session cleanup jobs scheduled","service":"smart-health-backend","timestamp":"2025-10-08T01:28:53.710Z"}
+{"level":"info","message":"Running one-time session cleanup...","service":"smart-health-backend","timestamp":"2025-10-08T01:28:53.710Z"}
+{"level":"info","message":"MongoDB Connected: localhost","service":"smart-health-backend","timestamp":"2025-10-08T01:28:53.725Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","service":"smart-health-backend","timestamp":"2025-10-08T01:28:53.741Z"}
+{"level":"info","message":"One-time cleanup completed. Removed 0 expired sessions.","service":"smart-health-backend","timestamp":"2025-10-08T01:28:53.741Z"}
+{"level":"info","message":"POST /api/auth/register - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:28:59.339Z"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:05.766Z"}
+{"level":"info","message":"Session created for user 68e4e68769f18e1681ed9d9e: 060a00e7ac0455a5ec149fe5979466b6096a494808f1346bf6077e83e9b4a33e","service":"smart-health-backend","timestamp":"2025-10-08T01:29:06.273Z"}
+{"level":"info","message":"User logged in: surjagaming0@gmail.com","service":"smart-health-backend","timestamp":"2025-10-08T01:29:06.274Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:06.988Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:07.010Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:07.021Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:07.033Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:07.077Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:07.083Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:07.102Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:07.105Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:25.754Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:25.765Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:25.771Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:25.787Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:25.798Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:25.814Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:25.816Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:29:25.837Z"}
+{"level":"info","message":"Starting session cleanup job...","service":"smart-health-backend","timestamp":"2025-10-08T01:30:00.739Z"}
+{"level":"info","message":"Cleaned up 0 expired sessions","service":"smart-health-backend","timestamp":"2025-10-08T01:30:00.741Z"}
+{"level":"info","message":"Session cleanup completed. Removed 0 expired sessions.","service":"smart-health-backend","timestamp":"2025-10-08T01:30:00.741Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.629Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.630Z"}
+{"level":"info","message":"GET /api/wearables/devices - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.643Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.645Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.654Z"}
+{"level":"info","message":"GET /api/wearables/health-data - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.674Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.679Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.697Z"}
+{"level":"info","message":"GET /api/family/groups - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.698Z"}
+{"level":"info","message":"GET /api/family/alerts - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:11.731Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:56.512Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:56.523Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:56.552Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:56.555Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:56.567Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:56.571Z"}
+{"level":"info","message":"POST /api/auth/logout - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:35:57.848Z"}
+{"level":"info","message":"Session logged out: 060a00e7ac0455a5ec149fe5979466b6096a494808f1346bf6077e83e9b4a33e","service":"smart-health-backend","timestamp":"2025-10-08T01:35:57.855Z"}
+{"level":"info","message":"User logged out: surjagaming0@gmail.com","service":"smart-health-backend","timestamp":"2025-10-08T01:35:57.855Z"}
+{"level":"info","message":"POST /api/auth/login - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:02.414Z"}
+{"level":"info","message":"Session created for user 68e4e68769f18e1681ed9d9e: 2e2e951a47bb80b6107aa10035b4a6209a50dfa4666c30ca526353d769afbc63","service":"smart-health-backend","timestamp":"2025-10-08T01:36:02.874Z"}
+{"level":"info","message":"User logged in: surjagaming0@gmail.com","service":"smart-health-backend","timestamp":"2025-10-08T01:36:02.874Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:03.220Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:03.231Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:03.240Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:03.250Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:03.281Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:03.282Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:03.293Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:36:03.296Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:37:34.405Z"}
+{"level":"info","message":"GET /api/auth/me - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:37:34.415Z"}
+{"level":"info","message":"GET /api/communication/doctors - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:37:39.460Z"}
+{"level":"info","message":"Searching for healthcare facilities near 22.8052267, 86.2741902 within 10km","service":"smart-health-backend","timestamp":"2025-10-08T01:37:39.465Z"}
+{"level":"info","message":"Searching Overpass API for healthcare facilities around 22.8052267, 86.2741902 within 10km","service":"smart-health-backend","timestamp":"2025-10-08T01:37:39.466Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:37:41.881Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:37:41.883Z"}
+{"level":"info","message":"GET /api/search-history/analytics - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:37:41.896Z"}
+{"level":"info","message":"GET /api/search-history - ::1","service":"smart-health-backend","timestamp":"2025-10-08T01:37:41.900Z"}
+{"level":"info","message":"Found 29 healthcare facilities from Overpass API","service":"smart-health-backend","timestamp":"2025-10-08T01:37:42.677Z"}
+{"level":"info","message":"Found 39 healthcare facilities from Nominatim API","service":"smart-health-backend","timestamp":"2025-10-08T01:37:50.568Z"}
+{"level":"info","message":"Search method 1 returned 29 results","service":"smart-health-backend","timestamp":"2025-10-08T01:37:50.568Z"}
+{"level":"info","message":"Search method 2 returned 39 results","service":"smart-health-backend","timestamp":"2025-10-08T01:37:50.568Z"}
+{"level":"info","message":"Search method 3 returned 8 results","service":"smart-health-backend","timestamp":"2025-10-08T01:37:50.568Z"}
+{"level":"info","message":"Returning 20 healthcare facilities","service":"smart-health-backend","timestamp":"2025-10-08T01:37:50.569Z"}
+{"level":"info","message":"Doctor search saved for user 68e4e68769f18e1681ed9d9e","service":"smart-health-backend","timestamp":"2025-10-08T01:37:50.572Z"}

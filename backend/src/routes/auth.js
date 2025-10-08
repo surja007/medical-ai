@@ -17,7 +17,7 @@ router.post('/register', [
   body('password').isLength({ min: 8 }).withMessage('Password must be at least 8 characters'),
   body('dateOfBirth').isISO8601().withMessage('Please enter a valid date of birth'),
   body('gender').isIn(['male', 'female', 'other', 'prefer_not_to_say']).withMessage('Please select a valid gender'),
-  body('phoneNumber').isMobilePhone().withMessage('Please enter a valid phone number')
+  body('phoneNumber').matches(/^\+?[\d\s\-\(\)]+$/).withMessage('Please enter a valid phone number')
 ], async (req, res) => {
   try {
     const errors = validationResult(req);

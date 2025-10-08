@@ -26,6 +26,7 @@ import DeviceCard from '@/components/wearables/DeviceCard'
 import HealthMetrics from '@/components/wearables/HealthMetrics'
 import FamilyMonitoring from '@/components/wearables/FamilyMonitoring'
 import AlertsPanel from '@/components/wearables/AlertsPanel'
+import RealTimeHealthData from '@/components/wearables/RealTimeHealthData'
 
 export default function WearablesPage() {
   const [devices, setDevices] = useState([])
@@ -35,6 +36,8 @@ export default function WearablesPage() {
   const [loading, setLoading] = useState(true)
   const [showConnectModal, setShowConnectModal] = useState(false)
   const [activeTab, setActiveTab] = useState('devices')
+  const [bluetoothDevices, setBluetoothDevices] = useState([])
+  const [realTimeData, setRealTimeData] = useState({})
 
   useEffect(() => {
     // Check URL parameters for tab
@@ -54,6 +57,7 @@ export default function WearablesPage() {
       // Fetch connected devices
       const devicesResponse = await wearableAPI.getDevices()
       setDevices(devicesResponse.data.devices || [])
+      setBluetoothDevices(devicesResponse.data.bluetoothConnections || [])
 
       // Fetch health data
       const healthResponse = await wearableAPI.getHealthData()
@@ -91,6 +95,26 @@ export default function WearablesPage() {
     } catch (error) {
       console.error('Failed to connect device:', error)
     }
+  }
+
+  const handleRealTimeData = (data) => {
+    setRealTimeData(prev => ({
+      ...prev,
+      [data.type]: data,
+      lastUpdate: new Date().toLocaleTimeString()
+    }))
+    
+    // Update health data display
+    setHealthData(prev => ({
+      ...prev,
+      latestReadings: {
+        ...prev?.latestReadings,
+        [data.type]: {
+          value: data.bpm || data.count || data.level || data.temperature || data.percentage,
+          timestamp: new Date().toISOString()
+        }
+      }
+    }))
   }
 
   const handleDeviceDisconnect = async (deviceId) => {
@@ -163,8 +187,13 @@ export default function WearablesPage() {
                 <div>
                   <p className="text-sm text-gray-600">Latest Heart Rate</p>
                   <p className="text-2xl font-bold text-gray-900">
-                    {healthData?.latestReadings?.heart_rate?.value || '--'} BPM
+                    {realTimeData.heart_rate?.bpm || 
+                     healthData?.latestReadings?.heart_rate?.value || '--'} 
+                    {(realTimeData.heart_rate?.bpm || healthData?.latestReadings?.heart_rate?.value) && ' BPM'}
                   </p>
+                  {realTimeData.lastUpdate && (
+                    <p className="text-xs text-green-600">Live • {realTimeData.lastUpdate}</p>
+                  )}
                 </div>
               </div>
             </Card>
@@ -195,6 +224,14 @@ export default function WearablesPage() {
               </div>
             </Card>
           </div>
+
+          {/* Real-time Data for Bluetooth Devices */}
+          {bluetoothDevices.length > 0 && (
+            <RealTimeHealthData 
+              deviceId={bluetoothDevices[0]?.deviceId}
+              onDataReceived={handleRealTimeData}
+            />
+          )}
 
           {/* Main Content Tabs */}
           <Tabs value={activeTab} onValueChange={setActiveTab} className="space-y-6">
