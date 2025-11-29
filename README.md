@@ -495,10 +495,6 @@ docker-compose -f docker-compose.yml up -d
 - **Testing**: Jest for unit tests, Supertest for API tests
 - **Documentation**: Update README for new features
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🆘 Support
 
 - **Documentation**: Check the `/docs` folder for detailed guides
